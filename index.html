@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" width="device-width">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -35,14 +36,15 @@
             padding: 30px;
         }
 
+        /* Adjust the image size and float */
         img {
-          width: 25%;
-        height: 25%;
-        float: inline-start;
-        margin-left: 20PX;
-        margin-right: 20px;
-        margin-top: 20PX;
-        border-radius: 10px;
+            width: 150px; /* Set a fixed width for better alignment */
+            height: auto;
+            float: left; /* Align image to the left */
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
         }
 
         p {
@@ -50,8 +52,9 @@
             font-size: large;
             color: black;
             display: inline-block;
-            width: 800px;
+            width: calc(100% - 200px); /* Adjust width considering the image */
             margin: 20px;
+            text-align: justify; /* For better paragraph alignment */
         }
 
         .red {
@@ -88,31 +91,32 @@
 
 <body>
     <nav>
-        <a href="">Home</a>
-        <a href="">Contact Me</a>
+        <a href="#">Home</a>
+        <a href="#">Contact Me</a>
     </nav>
     <header>
-        <h1>Hello, I am Simran </h1>
+        <h1>Hello, I am Simran</h1>
     </header>
     <section>
         <!-- Adding an image with my introduction -->
         <img src="WhatsApp Image 2024-10-01 at 3.37.04 PM.jpeg" alt="Simran" class="profile">
-         <p>
-        I am passionate about technology and problem-solving, currently working in the Technical Solutions Team. 
-        My focus is on assisting clients with their website tracking implementations and ensuring seamless 
-        integration of various tools like Google Ads and Google Tag Manager. I enjoy collaborating with clients 
-        to provide effective solutions and help them achieve their business goals. In my free time, I love 
-        exploring new technologies and honing my skills in web development and data analysis.
-    </p>
+        <p>
+            I am passionate about technology and problem-solving, currently working in the Technical Solutions Team. 
+            My focus is on assisting clients with their website tracking implementations and ensuring seamless 
+            integration of various tools like Google Ads and Google Tag Manager. I enjoy collaborating with clients 
+            to provide effective solutions and help them achieve their business goals. In my free time, I love 
+            exploring new technologies and honing my skills in web development and data analysis.
+        </p>
 
         <div class="red"></div>
         <div class="button">
             <a href="contact-me.html">Contact Me</a>
             <a href="CV - Sheet1.pdf" download="">Download CV</a>
         </div>
-    </main>
+    </section>
     <footer>
         All Rights Reserved @ 2024
     </footer>
 </body>
 </html>
+
